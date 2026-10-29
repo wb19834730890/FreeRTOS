@@ -1,0 +1,4 @@
+/home/wubo/Desktop/FreeRtos/print _3/Core/Src/main.c:68:5:main	8	static
+/home/wubo/Desktop/FreeRtos/print _3/Core/Src/main.c:131:6:SystemClock_Config	72	static
+/home/wubo/Desktop/FreeRtos/print _3/Core/Src/main.c:179:6:HAL_TIM_PeriodElapsedCallback	16	static
+/home/wubo/Desktop/FreeRtos/print _3/Core/Src/main.c:197:6:Error_Handler	4	static

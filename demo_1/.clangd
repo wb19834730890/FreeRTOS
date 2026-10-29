@@ -1,0 +1,18 @@
+# .clangd —— STM32F103 (Cortex-M3) CubeMX + CMake 工程的 clangd 配置
+# 参考文档: https://clangd.llvm.org/config
+#
+# 注意: --query-driver 属于命令行参数, 不能写在这里,
+#       必须放到 .vscode/settings.json 的 "clangd.arguments" 里。
+
+CompileFlags:
+  # CMake 生成的编译数据库, 路径相对本文件所在目录解析
+  CompilationDatabase: build/Debug
+
+  # 让 clangd 调用真正的交叉编译器来获取 target triple 与系统头文件路径。
+  # 该字段只有在 VS Code 的 --query-driver=/usr/bin/arm-none-eabi-* 允许下才会执行。
+  Compiler: /usr/bin/arm-none-eabi-gcc
+
+  # 移除 clang 不识别或会产生副作用的 GCC 专有参数
+  # (-fstack-usage 会让 clangd 持续写出 .su 文件)
+  Remove:
+    - -fstack-usage

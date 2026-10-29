@@ -1,0 +1,6 @@
+/home/wubo/Desktop/FreeRtos/demo_2/Core/Src/freertos.c:65:6:MyTask	16	static
+/home/wubo/Desktop/FreeRtos/demo_2/Core/Src/freertos.c:87:6:OLEDPrintTask	32	static
+/home/wubo/Desktop/FreeRtos/demo_2/Core/Src/freertos.c:111:6:IRReceiverTask	24	static
+/home/wubo/Desktop/FreeRtos/demo_2/Core/Src/freertos.c:140:6:LedTask	16	static
+/home/wubo/Desktop/FreeRtos/demo_2/Core/Src/freertos.c:164:6:MX_FREERTOS_Init	24	static
+/home/wubo/Desktop/FreeRtos/demo_2/Core/Src/freertos.c:233:6:StartDefaultTask	16	static

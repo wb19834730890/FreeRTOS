@@ -1,0 +1,13 @@
+{
+  // ---- clangd: 关键参数 ----
+  // --query-driver 必须在这里配置 (不能写进 .clangd),
+  // 否则 clangd 会用宿主机 x86 的头文件去解析 ARM 代码。
+  "clangd.arguments": [
+    "--query-driver=/usr/bin/arm-none-eabi-*",
+    "--background-index",
+    "--clang-tidy",
+    "--completion-style=detailed",
+    "--header-insertion=never",
+    "--pch-storage=memory"
+  ]
+}

@@ -1,0 +1,4 @@
+/home/wubo/Desktop/FreeRtos/print _1/Core/Src/freertos.c:81:6:Task	40	static
+/home/wubo/Desktop/FreeRtos/print _1/Core/Src/freertos.c:101:6:OLEDTask	64	static
+/home/wubo/Desktop/FreeRtos/print _1/Core/Src/freertos.c:158:6:MX_FREERTOS_Init	24	static
+/home/wubo/Desktop/FreeRtos/print _1/Core/Src/freertos.c:208:6:StartDefaultTask	16	static

@@ -1,0 +1,43 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug (OpenOCD + ST-Link)",
+      "type": "cortex-debug",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "executable": "${workspaceFolder}/build/Debug/IIC.elf",
+      "servertype": "openocd",
+      "configFiles": [
+        "interface/stlink.cfg",
+        "target/stm32f1x.cfg"
+      ],
+      "searchDir": ["/usr/share/openocd/scripts"],
+      "openOCDLaunchCommands": ["adapter speed 1000"],
+      "gdbPath": "gdb-multiarch",
+      "device": "STM32F103C8",
+      "svdFile": "${workspaceFolder}/STM32F103xx.svd",
+      "runToEntryPoint": "main",
+      "preLaunchTask": "Build (Debug)",
+      "showDevDebugOutput": "none",
+      "swoConfig": { "enabled": false }
+    },
+    {
+      "name": "Attach (OpenOCD + ST-Link)",
+      "type": "cortex-debug",
+      "request": "attach",
+      "cwd": "${workspaceFolder}",
+      "executable": "${workspaceFolder}/build/Debug/IIC.elf",
+      "servertype": "openocd",
+      "configFiles": [
+        "interface/stlink.cfg",
+        "target/stm32f1x.cfg"
+      ],
+      "searchDir": ["/usr/share/openocd/scripts"],
+      "gdbPath": "gdb-multiarch",
+      "device": "STM32F103C8",
+      "svdFile": "${workspaceFolder}/STM32F103xx.svd",
+      "showDevDebugOutput": "none"
+    }
+  ]
+}
